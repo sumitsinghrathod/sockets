@@ -8,8 +8,9 @@ console.log('Socket connection established from client side!!!');
 
 socket.on('message' , function(message){
 	console.log('Message Recived');
+	var momenttimestamp = moment.utc(message.timestamp);
 	console.log(message.text);
-	jQuery('.messages').append('<p>'+message.text+'</p>');
+	jQuery('.messages').append('<p>'+ momenttimestamp.local().format('hh:mm a')+':'+' '+message.text+'</p>');
 
 });
 

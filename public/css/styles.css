@@ -1,0 +1,30 @@
+h1 {
+	margin: 24px 0;
+	
+}
+h2 {
+	color:#d54d7b;; 
+	font-family: 'Lato',sans-serif; 
+	font-size: 54px; 
+	font-weight: 300; 
+	line-height: 58px; 
+	margin: 0 0 19px;
+}
+
+h3 {
+	color:#d54d7b;; 
+	font-family: 'Lato',sans-serif; 
+}
+
+.messages p{
+	margin: 6px 0;
+}
+
+label {
+	color:#aaa;
+	font-size: 15px;
+}
+#chat-div-height{
+	max-height: 200px;
+	overflow: auto;
+}

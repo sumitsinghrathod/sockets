@@ -8,29 +8,34 @@
 </head>
 <body>
 <div class="container">
+<div class="row" style="padding: 80px"></div>
 	<div class="row">
-		<div class="col-md-6 col-md-offset-3 well">
-			<a href="index.html"><div>Change Setting</div></a>
-			<h1 class="room-title"></h1>
-			<ul class="messages list-group">
-				<!-- Message End Up Here-->
-			</ul>
-			<form id="message-form">
-				<div class="form-group">
-					<div class="input-group">
-						<span class="input-group-addon">
-							<i class="glyphicon glyphicon-comment"></i>
+		<div class="col-md-3"></div>
+			<div class="col-md-6  well">
+				<a href="index.html"><div>Change Setting</div></a>
+				<h3 class="room-title"></h3>
+				<div id="chat-div-height">
+				<ul class="messages list-group">
+					<!-- Message End Up Here-->
+				</ul>
+				</div>
+				<form id="message-form">
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon">
+								<i class="glyphicon glyphicon-comment"></i>
 
-						</span>
-						<input type="text" class="form-control" name="message"></input>
+							</span>
+							<input type="text" class="form-control" name="message"></input>
+						</div>
 					</div>
-				</div>
-				<div class="form-control">
-					<input class="btn btn-default btn-block" type="submit"/>
-				</div>
-				
-			</form>
-		</div>
+					<div class="form-group">
+						<input  type="submit" class="btn btn-primary btn-block"/>
+					</div>
+					
+				</form>
+			</div>
+		<div class="col-md-3"></div>
 	</div>
 </div>
 

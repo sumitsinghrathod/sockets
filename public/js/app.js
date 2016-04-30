@@ -1,7 +1,7 @@
 var name = getQueryVariable('name') || 'Anonymous';
 var room = getQueryVariable('room') || 'No Room Allocated';
 var $room_name = jQuery('.room-title');
-$room_name.text(room);
+$room_name.text("Group Name: " + room);
 console.log(room);
 console.log(name + " " +"wants to join" + " " + room);
 var socket = io();
@@ -25,6 +25,8 @@ socket.on('message' , function(message){
 	$message.append('<p><strong>'+message.name+ ' ' + momenttimestamp.local().format('hh:mm a')+ '</strong></p>');
 	$message.append('<p>'+message.text+'</p>');
 	$messages.append($message);
+	var textarea = document.getElementById('chat-div-height');
+	textarea.scrollTop = textarea.scrollHeight;
 
 });
 

@@ -20,9 +20,11 @@ socket.on('message' , function(message){
 	console.log('Message Recived');
 	var momenttimestamp = moment.utc(message.timestamp);
 	console.log(message.text);
-	var $message = jQuery('.messages');
+	var $messages = jQuery('.messages');
+	var $message = jQuery('<li class="list-group-item"></li>')
 	$message.append('<p><strong>'+message.name+ ' ' + momenttimestamp.local().format('hh:mm a')+ '</strong></p>');
 	$message.append('<p>'+message.text+'</p>');
+	$messages.append($message);
 
 });
 

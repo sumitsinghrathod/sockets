@@ -1,10 +1,17 @@
 var name = getQueryVariable('name') || 'Anonymous';
-var room = getQueryVariable('room');
+var room = getQueryVariable('room') || 'No Room Allocated';
+var $room_name = jQuery('.room-title');
+$room_name.text(room);
+console.log(room);
 console.log(name + " " +"wants to join" + " " + room);
 var socket = io();
 
 socket.on('connect' , function(){
 console.log('Socket connection established from client side!!!');
+socket.emit('joinRoom' ,{
+	name : name,
+	room : room
+});
 //alert("Connected");
 
 });

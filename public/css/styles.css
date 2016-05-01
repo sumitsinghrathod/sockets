@@ -28,3 +28,13 @@ label {
 	max-height: 200px;
 	overflow: auto;
 }
+
+body {
+	 background: url('../img/chat-bg.jpg') no-repeat fixed center center;
+	 background-size: cover;
+	 font-family: Montserrat;
+}
+
+.chat-details{
+	opacity: 0.8
+}
